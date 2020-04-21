@@ -1,0 +1,8 @@
+version: '3'
+services:
+  codeeducation:
+    container_name: go-calc-soma
+    build: .
+    volumes:
+      - ./src/calc-soma:/go/src/calc-soma
+    working_dir: /go/src/calc-soma
